@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReminderViewController">
+            <connections>
+                <outlet property="datePicker" destination="DGo-xf-q7G" id="FmF-Qd-Ppp"/>
+                <outlet property="view" destination="tEu-tk-Va7" id="AGl-OB-bTK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tEu-tk-Va7">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f0-Rv-v3X">
+                    <rect key="frame" x="260" y="411" width="79" height="30"/>
+                    <state key="normal" title="Remind me">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addReminder:" destination="-1" eventType="touchUpInside" id="Xv1-82-Pas"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="DGo-xf-q7G">
+                    <rect key="frame" x="0.0" y="219" width="600" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="457667203.14308399">
+                        <!--2015-07-04 01:46:43 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="DGo-xf-q7G" secondAttribute="centerX" id="6TG-td-mJD"/>
+                <constraint firstItem="6f0-Rv-v3X" firstAttribute="top" secondItem="DGo-xf-q7G" secondAttribute="bottom" constant="30" id="Chh-QB-P2d"/>
+                <constraint firstItem="DGo-xf-q7G" firstAttribute="leading" secondItem="tEu-tk-Va7" secondAttribute="leading" id="TNB-QE-0dA"/>
+                <constraint firstAttribute="centerX" secondItem="6f0-Rv-v3X" secondAttribute="centerX" id="Wxu-Q3-uLF"/>
+                <constraint firstAttribute="centerY" secondItem="DGo-xf-q7G" secondAttribute="centerY" id="dP7-95-Igw"/>
+                <constraint firstAttribute="trailing" secondItem="DGo-xf-q7G" secondAttribute="trailing" id="q74-1Y-E15"/>
+            </constraints>
+            <point key="canvasLocation" x="333" y="323"/>
+        </view>
+    </objects>
+</document>
