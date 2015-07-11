@@ -101,9 +101,9 @@
 				64AAEFFF1B4D129F007246D7 /* ItemsViewController.h */,
 				64AAF0001B4D129F007246D7 /* ItemsViewController.m */,
 				6403653A1B4E54F400853F02 /* Item.h */,
+				6403653B1B4E54F400853F02 /* Item.m */,
 				6403653D1B4E676600853F02 /* ItemStore.h */,
 				6403653E1B4E676600853F02 /* ItemStore.m */,
-				6403653B1B4E54F400853F02 /* Item.m */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
